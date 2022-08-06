@@ -1,0 +1,50 @@
+body
+{
+    background: burlywood;
+    text-align: center;
+    font-family: Comic;
+    color: brown;
+    
+}
+h1
+{
+    font-size: 2em;
+    font-style: italic;
+    padding: 20px;
+}
+section
+{
+    width: 400px;
+    height: 70px;
+    padding: 10px;
+    background: yellowgreen;
+    border: 2px green;
+    border-radius: 15px;
+    margin: auto;
+}
+section .car
+{
+    width: 96px;
+    height: 65px;
+    border: 1px transparent;
+    transition: 2s;
+}
+.transition:hover .car
+{
+    transform: translateX(calc(400px - 101px));
+}
+section .smiley
+{
+    width: 70px;
+    height: 65px;
+    border: 1px transparent;
+}
+.animation .smiley
+{
+    animation-name: none;
+    animation: spin 5s infinite alternate ease 2s;
+}
+@keyframes spin
+{
+    from{transform: none;} to{transform: translateX(calc(400px - 71px)) rotate(360deg);}
+}
